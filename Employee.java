@@ -6,15 +6,17 @@ private double totalSal;
 private int baseSal;
 private double hra;
 private double da;
+private Address ad;
 
 	public Employee() {
 		
 	}
 
-	public Employee(int id, String name, int baseSal) {
+	public Employee(int id, String name, int baseSal,Address ad) {
 		this.id = id;
 		this.name = name;
 		this.baseSal = baseSal;
+		this.ad=ad;
 	}
 
 	public int getId() {
@@ -84,6 +86,7 @@ private double da;
 		System.out.println("House Rental Allowance:"+this.hra);
 		System.out.println("Dearness Allowance:"+this.da);
 		System.out.println("Total Salary:"+this.totalSal);
+		ad.printAdress();
 	}
 
 }
